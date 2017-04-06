@@ -30,7 +30,7 @@ else
 require_once('FxDataModel.php');
 
 
-// I will not fix what follows.
+
 // Look to see if a serialized version of FxDataModel is in the session
 // If it is, pull it out, unserialize it and store it in a local variable
 // If not, instantiate the object and store a serialize version of it in the session for the future.
@@ -85,7 +85,7 @@ else
 <span style="text-align: center;"><h1>Welcome <?php echo $username ?></h1></span>
 <form name="fxCalc" action="fxCalc.php" method="post">
 
-    <center>
+    <div style="text-align: center">
         <!-- Name should be the key value BUT on page load it is empty so the program does not run. It only runs when the hard-coded name is added-->
         <select name="srcCucy">
             <?php
@@ -140,7 +140,7 @@ else
 
         <input type="submit" value="Convert"/>
         <input type="reset"/>
-    </center>
+    </div>
 </form>
 
 </body>
