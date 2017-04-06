@@ -49,7 +49,7 @@ $iniArray = $fxDataModel->getIniArray();
 
 // Check if the input is empty
 if( array_key_exists( $iniArray[FxDataModel::SRC_CUCY_KEY], $_POST ) ) {
-    $iniArray[FxDataModel::SRC_AMT_KEY] = $_POST[$iniArray[FxDataModel::SRC_AMT_KEY]];
+    $srcAmt = $_POST[$iniArray[FxDataModel::SRC_AMT_KEY]];
 }
 else{
     $_POST[$iniArray[FxDataModel::SRC_AMT_KEY]] = '';
